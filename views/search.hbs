@@ -1,0 +1,15 @@
+<div class="address-form">
+    {{#if elections.length}}
+    {{#each elections}}
+    <h1>{{description}}</h1>
+    <h3>Date: {{date}}</h2>
+        <h3>Type: {{type}}</h2>
+            <h3>ID: {{id}}</h2>
+                <h2>Population: {{population}}</h2>
+                <h3>Website: <a href={{website}}>{{website}}</a></h2>
+                    <h3>Notes: <a href={{source.notes}}>{{source.notes}}</a></h2>
+                        {{/each}}
+                        {{else}}
+                        <h1>There are no upcoming elections at this time.</h1>
+                        {{/if}}
+</div>
